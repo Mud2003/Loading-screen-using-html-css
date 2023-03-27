@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, rgb(130, 131, 219), rgb(223, 96, 149));
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.loading{
+    background-color: blueviolet;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border-radius: 20%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Animations */
+    animation: rotate-center 3s linear infinite both;
+}
+@keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+}
+ 
+span{
+    position: fixed;
+}
